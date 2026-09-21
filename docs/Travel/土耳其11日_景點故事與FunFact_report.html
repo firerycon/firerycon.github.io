@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>土耳其11日 · 景點故事與Fun Fact全解析</title>
+<style>
+  :root{
+    --ink:#2b2118; --paper:#faf6ef; --card:#ffffff;
+    --turq:#0e7c86; --turq-dark:#0a5c64; --gold:#c8922a; --gold-light:#f3e3c3;
+    --terra:#b4552d; --red:#c0392b; --mist:#6b7f80;
+    --line:#e8dfcf;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+    background:var(--paper); color:var(--ink); line-height:1.75; font-size:16px;}
+  .wrap{max-width:920px; margin:0 auto; padding:0 28px;}
+
+  /* ---------- HERO ---------- */
+  .hero{background:linear-gradient(150deg,#0a3d44 0%,#0e7c86 55%,#1597a0 100%);
+    color:#fff; padding:70px 0 56px; position:relative; overflow:hidden;}
+  .hero::after{content:""; position:absolute; inset:0;
+    background:radial-gradient(circle at 85% 15%, rgba(200,146,42,.35), transparent 45%),
+               radial-gradient(circle at 10% 90%, rgba(255,255,255,.08), transparent 40%);}
+  .hero .wrap{position:relative; z-index:2;}
+  .hero .tag{display:inline-block; background:rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.35);
+    border-radius:999px; padding:4px 16px; font-size:14px; letter-spacing:2px; margin-bottom:18px;}
+  .hero h1{font-size:42px; font-weight:900; letter-spacing:2px; line-height:1.3;}
+  .hero h1 span{color:#ffd98a;}
+  .hero p.sub{margin-top:14px; font-size:17px; opacity:.92; max-width:680px;}
+  .hero .meta{margin-top:26px; display:flex; flex-wrap:wrap; gap:12px 26px; font-size:14.5px; opacity:.95;}
+  .hero .meta b{color:#ffd98a;}
+
+  /* ---------- SECTION HEADS ---------- */
+  .section{padding:44px 0 8px;}
+  .sec-head{display:flex; align-items:baseline; gap:14px; border-bottom:3px solid var(--turq); padding-bottom:10px; margin-bottom:26px;}
+  .sec-head h2{font-size:26px; font-weight:800; color:var(--turq-dark);}
+  .sec-head small{color:var(--mist); font-size:14px;}
+
+  /* ---------- OVERVIEW TABLE ---------- */
+  table.route{width:100%; border-collapse:collapse; background:var(--card);
+    border-radius:12px; overflow:hidden; box-shadow:0 2px 10px rgba(60,40,10,.08); font-size:14.5px;}
+  table.route th{background:var(--turq-dark); color:#fff; padding:10px 12px; text-align:left; font-weight:600;}
+  table.route td{padding:9px 12px; border-bottom:1px solid var(--line); vertical-align:top;}
+  table.route tr:last-child td{border-bottom:none;}
+  table.route tr:nth-child(even) td{background:#fbf8f1;}
+  .dnum{display:inline-block; background:var(--gold); color:#fff; font-weight:800;
+    border-radius:8px; padding:1px 9px; font-size:13px; white-space:nowrap;}
+
+  /* ---------- DAY CARD ---------- */
+  .day{background:var(--card); border-radius:16px; box-shadow:0 3px 16px rgba(60,40,10,.09);
+    margin:30px 0 44px; overflow:hidden; page-break-inside:avoid;}
+  .day-head{background:linear-gradient(120deg,var(--turq-dark),var(--turq)); color:#fff;
+    padding:18px 26px; display:flex; align-items:center; gap:16px; flex-wrap:wrap;}
+  .day-head .badge{background:#ffd98a; color:#5a3d00; font-weight:900; border-radius:10px;
+    padding:4px 14px; font-size:15px; white-space:nowrap;}
+  .day-head h3{font-size:20px; font-weight:800; letter-spacing:.5px;}
+  .day-head .date{margin-left:auto; opacity:.85; font-size:14px; white-space:nowrap;}
+  .route-line{background:#eef4f2; color:var(--turq-dark); padding:9px 26px; font-size:14px;
+    border-bottom:1px solid var(--line);}
+  .route-line b{color:var(--terra);}
+
+  /* ---------- SPOT ---------- */
+  .spot{padding:24px 26px 20px; border-bottom:1px dashed var(--line);}
+  .spot:last-of-type{border-bottom:none;}
+  .spot h4{font-size:19px; font-weight:800; color:var(--turq-dark); margin-bottom:2px;}
+  .spot h4 .en{font-size:13px; font-weight:500; color:var(--mist); margin-left:8px; letter-spacing:.3px;}
+  .spot .kicker{font-size:13px; color:var(--gold); font-weight:700; letter-spacing:1.5px; margin-bottom:6px;}
+  .spot p{margin:10px 0; text-align:justify;}
+  .spot p .lead{font-weight:700; color:var(--terra);}
+
+  .funfact{background:linear-gradient(115deg,#fdf6e7,#f8ecd2); border-left:5px solid var(--gold);
+    border-radius:0 12px 12px 0; padding:13px 18px; margin:14px 0 4px;}
+  .funfact .ff-label{font-weight:900; color:#9a6c00; font-size:14px; letter-spacing:1px;}
+  .funfact p{margin:5px 0 0; font-size:15px;}
+
+  .didyou{background:#eef6f6; border-left:5px solid var(--turq); border-radius:0 12px 12px 0;
+    padding:13px 18px; margin:14px 0 4px;}
+  .didyou .ff-label{font-weight:900; color:var(--turq-dark); font-size:14px; letter-spacing:1px;}
+  .didyou p{margin:5px 0 0; font-size:15px;}
+
+  .tip{background:#fbf1ec; border:1px solid #ecd5c8; border-radius:10px; padding:10px 16px;
+    margin-top:14px; font-size:14px; color:#7a4a2b;}
+  .tip::before{content:"💡 遊玩提示　"; font-weight:800;}
+
+  /* ---------- THEMES ---------- */
+  .grid2{display:grid; grid-template-columns:1fr 1fr; gap:20px; margin:10px 0 30px;}
+  .theme{background:var(--card); border-radius:14px; padding:20px 22px; box-shadow:0 2px 12px rgba(60,40,10,.07);}
+  .theme h4{color:var(--turq-dark); font-size:17px; margin-bottom:8px;}
+  .theme p{font-size:14.5px; text-align:justify;}
+
+  /* ---------- FOOTER ---------- */
+  footer{margin-top:56px; background:var(--turq-dark); color:#dff0ef; padding:30px 0 36px; font-size:14px;}
+  footer .wrap{display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap;}
+
+  /* ---------- PRINT ---------- */
+  @media print{
+    body{font-size:12.5px; background:#fff;}
+    .hero{padding:34px 0 28px; -webkit-print-color-adjust:exact; print-color-adjust:exact;}
+    .hero h1{font-size:30px;}
+    .day{box-shadow:none; border:1px solid var(--line); margin:18px 0 26px; page-break-inside:auto;}
+    .spot{page-break-inside:avoid;}
+    .day-head,.funfact,.didyou,.route-line,.dnum,.badge,table.route th,.hero,footer,
+    table.route tr:nth-child(even) td{
+      -webkit-print-color-adjust:exact; print-color-adjust:exact;}
+    .sec-head{page-break-after:avoid;}
+    a{color:inherit; text-decoration:none;}
+  }
+  @page{margin:14mm;}
+</style>
+</head>
+<body>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <div class="wrap">
+    <div class="tag">行前深度閱讀 · TURKEY 11 DAYS</div>
+    <h1>土耳其風情十一日<span> · 景點背後的故事與 Fun Fact</span></h1>
+    <p class="sub">從伊斯坦堡的圓頂與尖塔，到卡帕多奇亞的熱氣球與地下城；從安卡拉的國父陵寢，到艾菲索斯的圖書館——這份報告把行程裡每一個景點的前世今生、八卦與彩蛋，都替你先讀好了。到了現場，你聽導遊講的每個故事都似曾相識。</p>
+    <div class="meta">
+      <span>團號 <b>ETE092411TK6</b></span>
+      <span>日期 <b>2026 / 09 / 24 – 10 / 04</b></span>
+      <span>航班 <b>土耳其航空 TK125 / TK124（直飛）＋中段國內線 TK2333</b></span>
+      <span>特色 <b>熱氣球升空 · 兩晚洞穴飯店 · 兩晚希爾頓 · 博斯普魯斯包船</b></span>
+    </div>
+  </div>
+</header>
+
+<!-- ================= OVERVIEW ================= -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><h2>行程總覽</h2><small>一條橫跨歐亞的文明走廊</small></div>
+    <table class="route">
+      <tr><th style="width:86px">天數</th><th>路線</th><th>重點景點</th><th style="width:200px">住宿</th></tr>
+      <tr><td><span class="dnum">D1</span> 9/24</td><td>桃園 ✈ 伊斯坦堡（直飛約12小時）</td><td>移動日</td><td>Pullman Istanbul</td></tr>
+      <tr><td><span class="dnum">D2</span> 9/25</td><td>伊斯坦堡 → 469km → 安卡拉</td><td>凱末爾陵寢、安卡拉城堡</td><td>Alegria Business</td></tr>
+      <tr><td><span class="dnum">D3</span> 9/26</td><td>安卡拉 → 鹽湖 → 卡帕多奇亞</td><td>鹽湖、土耳其石展示中心</td><td>洞穴風格飯店 ×1</td></tr>
+      <tr><td><span class="dnum">D4</span> 9/27</td><td>卡帕多奇亞全日</td><td>熱氣球、奇岩怪石、哥樂美露天博物館、凱馬克利地下城、地毯工坊</td><td>洞穴風格飯店 ×2</td></tr>
+      <tr><td><span class="dnum">D5</span> 9/28</td><td>卡帕多奇亞 → 243km → 孔亞</td><td>蘇丹驛站、梅夫拉納博物館</td><td>Bayir Diamond</td></tr>
+      <tr><td><span class="dnum">D6</span> 9/29</td><td>孔亞 → 阿斯班多斯 → 安塔利亞</td><td>羅馬水道橋、阿斯班多斯大劇場、杜登瀑布、卡雷吉舊城</td><td>Renex Hotel</td></tr>
+      <tr><td><span class="dnum">D7</span> 9/30</td><td>安塔利亞 → 236km → 巴慕卡麗</td><td>棉堡、希拉波里斯古城</td><td>Richmond Thermal</td></tr>
+      <tr><td><span class="dnum">D8</span> 10/01</td><td>巴慕卡麗 → 艾菲索斯 → 伊茲密爾 ✈ 伊斯坦堡</td><td>艾菲索斯古城、皮衣工坊</td><td>Hilton Bakırköy</td></tr>
+      <tr><td><span class="dnum">D9</span> 10/02</td><td>伊斯坦堡全日</td><td>藍色清真寺、賽馬場、聖索菲亞、托普卡匹皇宮、塔克辛廣場</td><td>Hilton Bakırköy</td></tr>
+      <tr><td><span class="dnum">D10</span> 10/03</td><td>博斯普魯斯包船、香料市集 ✈ 桃園</td><td>海峽遊船、埃及市場</td><td>機上</td></tr>
+      <tr><td><span class="dnum">D11</span> 10/04</td><td>抵達桃園</td><td>—</td><td>溫暖的家</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- ================= 三千年層疊 ================= -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><h2>先讀這一頁：為什麼土耳其每個景點都是「三層 cake」</h2><small>看懂這個，後面所有景點秒懂</small></div>
+    <p>這趟行程幾乎每個景點都有同一個劇本：<span class="lead">赫梯人 → 希臘人 → 羅馬／拜占庭人 → 塞爾柱土耳其人 → 鄂圖曼帝國 → 現代土耳其共和國</span>。anatolia（安納托利亞，即亞洲土耳其）是人類文明延續最長的舞臺之一：公元前17世紀赫梯人在這裡建了第一個大國，之後希臘城邦、羅馬行省、東羅馬（拜占庭）、突厥王朝一層層疊上來。同一根石柱，可能下面刻著希臘文、旁邊刻著拉丁文、附近又立著塞爾柱的清真寺。</p>
+    <p>而1923年建國的國父凱末爾做了一件更戲劇化的事：把首都從伊斯坦堡<b>搬回</b>安納托利亞正中心的安卡拉——一個很多人以為只是小城市的地方，其實是土耳其的第二大都會。所以你會看到這趟行程「伊斯坦堡→安卡拉→向東→向南→向西→再回伊斯坦堡」的U型圈，本質上是一趟「從帝國舊都，繞行共和國的骨幹，再回到帝國舊都」的路線。</p>
+  </div>
+</section>
+
+<!-- ================= D1 ================= -->
+<div class="wrap"><div class="day">
+  <div class="day-head"><span class="badge">DAY 1</span><h3>桃園 ✈ 伊斯坦堡 · 世界上唯一跨兩洲的航班終點</h3><span class="date">09/24（四）</span></div>
+  <div class="route-line">TK125 直飛約12小時 · 早/午機上 · 晚餐自理 · 宿 <b>Pullman Istanbul</b></div>
+  <div class="spot">
+    <div class="kicker">移動日，但值得先做功課</div>
+    <h4>伊斯坦堡<span class="en">Istanbul</span></h4>
+    <p><span class="lead">同一座城改過三次名字：</span>拜占庭（Greek colony, 約前660）→ 君士坦丁堡（羅馬皇帝君士坦丁於330年遷都於此）→ 伊斯坦堡（土耳其人語）。它的舊城區被狹長的博斯普魯斯海峽一分為二：左岸是歐洲，右岸是亞洲——一座城市、兩塊大陸、三大帝國的首都。</p>
+    <div class="funfact"><span class="ff-label">🎯 FUN FACT</span>
+      <p>「伊斯坦堡」這個名字其實來自希臘語 <b>εἰς τὴν πόλιν（eis tin polin）</b>，意思是「進城去」。幾百年來鄉下人管首都只叫「那座城市（The City）」，傳著傳著就變成了「Istanbul」——像把「台北」叫成「進城」叫到最後變成地名。</p></div>
+    <div class="didyou"><span class="ff-label">🗺 冷知識</span>
+      <p>土耳其航空連續多年被 SkyTrax 評為「歐洲最佳航空公司」，飛機餐是出了名的好。12小時航程請享用——另外提醒：今天開始你的生物鐘會往回調5小時（土耳其慢台灣5小時）。</p></div>
+  </div>
+</div></div>
+
+<!-- ================= D2 ================= -->
+<div class="wrap"><div class="day">
+  <div class="day-head"><span class="badge">DAY 2</span><h3>伊斯坦堡 → 安卡拉 · 從帝國舊都到共和國新都</h3><span class="date">09/25（五）</span></div>
+  <div class="route-line">車程約469公里（4.5–5小時） · 凱末爾陵寢、安卡拉城堡 · 宿 <b>Alegria Business</b></div>
+
+  <div class="spot">
+    <div class="kicker">國家聖地</div>
+    <h4>凱末爾陵寢紀念館<span class="en">Anıtkabir, Atatürk Mausoleum</span></h4>
+    <p><span class="lead">把一個國家從墳裡挖出來的男人：</span>穆斯塔法·凱末爾（Mustafa Kemal）的頭號戰功不是打仗，而是「換系統」：一戰後協約國要把戰敗的鄂圖曼帝國瓜分，他領導獨立戰爭贏了，然後做了列舉不完的「格式化」——廢哈里發、放棄阿拉伯字母改用拉丁字母、禁費茲帽改戴禮帽、給婦女選舉權（比法國還早）、把首都搬到安卡拉。陵寢1944年動工、1953年完工，融合了西臺、希臘、拜占庭與伊斯蘭四種語彙——故意「什麼都是、什麼都不只是」，像他的國家定位。</p>
+    <p>展示廳的文物牆上，掛著一張有蔣中正簽名的照片——1930年代初中華民國特使訪問土耳其、兩國的「共和國之父」隔空同框的歷史現場。紀念館前鋪著碎石的大道兩側站著24頭石獅，代表突厥建國傳說中的24個歐古茲部落。</p>
+    <div class="funfact"><span class="ff-label">🎯 FUN FACT</span>
+      <p>凱末爾1938年因肝硬化病逝，但陵寢1953年才迎回靈柩——中間他的遺體在首都一座禮堂裡「暫住」了15年。更誇張的是守衛交接儀式：衛兵每分鐘換崗，動作像精密鐘錶，值得專程站在廣場看一次。</p></div>
+    <div class="tip">安檢嚴：A4以上大背包、尖銳物禁入；帶小包即可。廣場可遠眺全市，別急著進館。</div>
+  </div>
+
+  <div class="spot">
+    <div class="kicker">山城之眼</div>
+    <h4>安卡拉城堡<span class="en">Ankara Kalesi</span></h4>
+    <p><span class="lead">一座被攻城上癮的城堡：</span>安卡拉地處高原咽喉，城堡山從赫梯時代起就是兵家必爭——弗里吉亞、波斯、羅馬、拜占庭、阿拉伯人、塞爾柱人輪番上陣，所以留存的古建物不多、城牆很多「補丁」：同一面牆上你能摸到不同時代的修補痕跡。塞爾柱人1073年接手後把它改造成市鎮核心，山下就是大巴扎。</p>
+    <div class="funfact"><span class="ff-label">🎯 FUN FACT</span>
+      <p>安卡拉（舊名 Ancyra）其實是「錨（Anchor）」的變體——希臘神話裡弗裏吉亞王 Midas 的母親葬於此，而更接地氣的說法是：這裡的特產<b>安哥拉山羊（Angora goat）</b>毛細如絲，歐洲人把它的毛叫mohair（馬海毛）。團裡若有人買羊絨圍巾，那「安哥拉羊毛」就是這座城的名字本尊。貓界同樣欠它一筆：純白藍眼的「安哥拉貓」品種名也來自這裡。</p></div>
+    <div class="tip">登城牆台階陡、地面滑，穿防滑鞋；傍晚光線最適合拍老城全景。</div>
+  </div>
+</div></div>
+
+<!-- ================= D3 ================= -->
+<div class="wrap"><div class="day">
+  <div class="day-head"><span class="badge">DAY 3</span><h3>安卡拉 → 鹽湖 → 卡帕多奇亞 · 住進月球表面</h3><span class="date">09/26（六）</span></div>
+  <div class="route-line">安卡拉 →127km→ 鹽湖 →173km→ 卡帕多奇亞 · 宿 <b>洞穴風格飯店 Cappadocia Cave Resort</b>（兩晚之一）</div>
+
+  <div class="spot">
+    <div class="kicker">大地鹽盤</div>
+    <h4>圖茲湖鹽湖<span class="en">Lake Tuz (Tuz Gölü)</span></h4>
+    <p><span class="lead">土耳其80%的食鹽來自這個湖：</span>「Tuz」在土耳其語就是「鹽」。這裡遠古是海底，隆起後鹽分被封在岩層裡，雨雪把鹽洗進湖盆——夏天水退，湖面結出一層幾十公分厚的白色鹽殼，遠看像雪原。面積隨季節劇烈伸縮：春天融雪最大，盛夏幾乎只剩白盤。</p>
+    <div class="funfact"><span class="ff-label">🎯 FUN FACT</span>
+      <p>湖邊堆著白色小丘不是雪，是真的「鹽堆成山」。土耳其國家儲備鹽就在湖邊——湖邊還有國家儲鹽倉——用鹽磚壘牆，聽起來像笑話，但鹽磚真的夠硬。另外，這裡是火烈鳥的中转站：夏天鹽度爆表時，粉紅火烈鳥會在湖邊覓食，是導遊最愛講的彩蛋。</p></div>
+  </div>
+
+  <div class="spot">
+    <div class="kicker">藍色的護身符</div>
+    <h4>土耳其石展示中心<span class="en">Turquoise (Firuze) Jewelry</span></h4>
+    <p><span class="lead">它的英文比名字更早：</span>Turquoise＝「土耳其語的」，因為歐洲人最早经土耳其商人從波斯買到這種石頭。但產地名字是個美麗的誤會：土耳其本國其實早就開不出優質矿了（近年代產的是美國、中國），「土耳其石」其實是「经土耳其之手的石頭」。</p>
+    <div class="didyou"><span class="ff-label">🗺 冷知識</span>
+      <p>土耳其語叫它 <b> Firuze（菲魯茲）</b>，源自波斯語「勝利之石」。自古旅人把它當護身石——傳說石頭會隨主人安危變色。買不買隨你，聽個故事也值回票價。</p></div>
+  </div>
+
+  <div class="spot">
+    <div class="kicker">今夜的床在火山灰裡</div>
+    <h4>卡帕多奇亞與洞穴飯店<span class="en">Cappadocia & Cave Hotels</span></h4>
+    <p><span class="lead">「美麗馬之地」：</span>卡帕多奇亞之名源自古波斯語 <b>Katpatuka</b>，意為「美麗馬的地區」——這裡自古是帝國養馬場。地貌的成因是一場火山噴發：ERCİYES、HASAN 等火山噴出的凝灰岩堆了上百公尺，再經幾百萬年風雨雕刻成錐、柱、蘑菇。「洞穴飯店」不是噱頭而是延續傳統：當地人本來就往凝灰岩裡挖洞居住、挖洞蓋教堂——凝灰岩剛挖開時軟如起司，接觸空氣後變硬，冬暖夏涼。</p>
+    <div class="funfact"><span class="ff-label">🎯 FUN FACT</span>
+      <p>因為地貌太像外星球，這裡是《星際大戰》早期勘景候選地之一，也是國際媒體評選的「全球最佳熱氣球地點」——與肯亞、緬甸並列，但卡帕多奇亞是唯一能同時看到<b>一百顆氣球同日升空</b>的地方。另外提醒：洞穴房多無冷氣（夜里涼），房型各异靠抽籤——這正是它的魅力所在。</p></div>
+  </div>
+</div></div>
+
+<!-- ================= D4 ================= -->
+<div class="wrap"><div class="day">
+  <div class="day-head"><span class="badge">DAY 4</span><h3>卡帕多奇亞全日 · 飛起來、鑽進去</h3><span class="date">09/27（日）</span></div>
+  <div class="route-line">熱氣球 → 奇岩怪石 → 哥樂美露天博物館 → 凱馬克利地下城 → 地毯工坊 · 午餐自理 · 宿 <b>洞穴飯店</b></div>
+
+  <div class="spot">
+    <div class="kicker">清晨的第一課：看一百顆氣球同時充氣</div>
+    <h4>熱氣球之旅<span class="en">Cappadocia Balloon Tour</span></h4>
+    <p><span class="lead">卡帕多奇亞如何成為熱氣球之都：</span>1980年代少數 pilots 發現這裡的風紋與地文能把氣球溫柔地帶過岩柱之間，飛行高度可壓到離「蘑菇岩」只有幾十公尺。如今每天黎明百餘顆氣球同時升空，是全世界最密集的熱氣球場景。升空後開香檳慶祝的傳統從18世紀法國Montgolfier兄弟流傳下來——傳說當時農民以為會飛的怪物要燒掉村子，pilots 拿香檳自證無害，於是落地必開瓶。</p>
+    <div class="funfact"><span class="ff-label">🎯 FUN FACT</span>
+      <p>氣球公司對乘客有「配重平衡」要求，所以同團親友可能被分到不同籃子、一籃2–4人不等——這是物理，不是服務問題。若因天候停飛，本團政策是隔日候補→改到棉堡搭→全都不行才退美金100。</p></div>
+    <div class="tip">升空約1小時、全程無樓梯需攀爬籃筐；6歲以下、孕婦、懼高症/心臟病、100kg以上依規定不得搭乘（出發前14日告知可退NT$3,000）。清晨冷，洋蔥式穿法。</div>
+  </div>
+
+  <div class="spot">
+    <div class="kicker">天然石雕公園</div>
+    <h4>奇岩怪石：駱駝岩 · 烏其沙 · 獵人谷<span class="en">Unique Rock Formations</span></h4>
+    <p><span class="lead">每根岩柱都是一座倒數的鐘：</span>頭頂那層較硬的玄武岩像帽子保護下方軟凝灰岩不被雨打——帽子掉落的瞬間，下面的柱子就開始快速消失。所以「精靈煙囪」的壽命取決於頭上那頂帽子。烏其沙（Uçhisar）的巨岩城堡整座是可攀登的岩柱，頂上是千年了望點；獵人谷（Devrenti）則靠想像力吃饭——駱駝岩、海豚岩、馬形岩，導遊指哪像哪。</p>
+    <div class="funfact"><span class="ff-label">🎯 FUN FACT</span>
+      <p>「精靈煙囪（Fairy Chimney）」的名字來自當地傳說：岩洞裡住著精靈（peri），深夜點燈的洞穴其實是精靈的家。聽完這個再看日落，每根煙囪都像真的有人住。</p></div>
+  </div>
+
+  <div class="spot">
+    <div class="kicker">1985年世界文化遺產</div>
+    <h4>哥樂美露天博物館<span class="en">Göreme Open-Air Museum</span></h4>
+    <p><span class="lead">把教堂整個「往岩壁裡蓋」：</span>4世紀起，修士巴西流（Basil of Caesarea）的精神傳到此地，拜占庭.iconoclastdestroy 破壞聖像時期（726–843），躲進山頭的信徒乾脆把整面岩壁鑿空成教堂，直接在岩壁上畫滿壁畫——黑暗時代反而成全了最純樸的宗教藝術。暗黑教堂（Dark Church）因小窗透光差，顏料千年不褪，是全区最珍寶。</p>
+    <div class="funfact"><span class="ff-label">🎯 FUN FACT</span>
+      <p>區內的「蛇窟教堂」畫著被蛇纏身的苦修聖人，「棕櫚樹教堂」則因牆角一棵棕櫚樹得名——畫匠把身邊看得到的東西全畫進聖經場景。整個區本來就是一座修士與修女混居的「巖壁大學城」，教堂之間藏著互串的密道，上禮堂不用出門。</p></div>
+  </div>
+
+  <div class="spot">
+    <div class="kicker">萬人在你腳下生活過</div>
+    <h4>凱馬克利地下城<span class="en">Kaymaklı Underground City</span></h4>
+    <p><span class="lead">它的本業其實是「糧倉」：</span>考古學界目前傾向認為，凱馬克利的地下結構始於弗里吉亞時代（前8世紀左右）的地下糧倉，拜占庭時期（西元2–7世紀起）才逐層擴建成避難所。從西元4世紀到11世紀，這裡陸續抵擋過羅馬鎮壓、阿拉伯劫掠者、蒙古鐵騎——一條僅容一人側身而過、還得低頭的矮通道，是設计上最狠的一招：敵人只能單人進入，守衛一矛一個。五層樓深的空間裡有酒窖、榨油坊、教堂、學校、通風井，據稱可容近萬人。</p>
+    <div class="funfact"><span class="ff-label">🎯 FUN FACT</span>
+      <p>地下城連接著一條通往哥樂美的秘密地道，傳說有一條全長約9公里的地道通往哥樂美——避難時地面被圍、地下照跑。另外，「用幾噸石頭就能堵死門」的秘密是滾石門：圓盤狀巨石從內側沿溝槽推上，外面用矛頂開門，等於一把自閉式門閂。</p></div>
+    <div class="tip">通道矮、階梯陡、光線暗，幽閉恐懼者慎行；穿防滑好走的鞋。</div>
+  </div>
+
+  <div class="spot">
+    <div class="kicker">馬可·波羅的帶貨現場</div>
+    <h4>手工地毯工坊<span class="en">Handmade Carpet Store</span></h4>
+    <p><span class="lead">世界上最古老的打結藝術在安納托利亞：</span>現存最長的地毯「巴澤雷克地毯（Pazyryk）」是1949年蘇聯考古隊在西伯利亞永凍土裡挖出來的——碳定年測出約西元前5世紀，赫梯人的遠親編的。馬可·波羅在《遠遊記》裡寫道「世界上最好最漂亮的地毯只能在土耳其找到」。土耳其地毯用<b>雙結（Ghiordes knot）</b>，波斯用單結——雙結更費工、更耐用，圖騰以幾何對稱為主，每個紋樣都有名字與寓意（比如「公羊角」代表力量與豐收）。</p>
+    <div class="funfact"><span class="ff-label">🎯 FUN FACT</span>
+      <p>傳統地毯的圖騰是「織進去的簡訊」：年輕媳婦把自己的心事——愛情、盼歸、悲傷——用隱語編進花紋，婆婆看得懂才不會尷尬。所以買地毯時請導遊幫你「讀」一下圖騰在說什麼。</p></div>
+  </div>
+</div></div>
+<!-- ================= D5 ================= -->
+<div class="wrap"><div class="day">
+  <div class="day-head"><span class="badge">DAY 5</span><h3>卡帕多奇亞 → 孔亞 · 蘇菲派的旋转宇宙</h3><span class="date">09/28（一）</span></div>
+  <div class="route-line">車程約243公里 · 蘇丹驛站、梅夫拉納博物館 · 宿 <b>Bayir Diamond Hotel</b></div>
+
+  <div class="spot">
+    <div class="kicker">絲路休息站，40公里一座的「服務區」</div>
+    <h4>蘇丹驛站<span class="en">Sultanhanı Kervansaray</span></h4>
+    <p><span class="lead">塞爾柱帝國的「國道系統」：</span>12–13世紀的塞爾柱蘇丹在安納托利亞每一段商路每隔約40公里（一天馬程的三分之一）就蓋一座石造驛站，供商隊與駱駝過夜，由國家補貼營運——相當於中東版的服務區＋免付費旅館。多數已成廢墟，蘇丹驛站是保存最完整的一批，1229年完工，庭院大到能停車隊、清真寺與浴廁一應俱全。</p>
+    <div class="funfact"><span class="ff-label">🎯 FUN FACT</span>
+      <p>塞爾柱商路是當時的「國際快遞網絡」：商隊進駐驛站免費食宿三天，連生病的動物也管——這種制度直接刻在當年的石碑上。驛站石門上的雕刻簽名，是安納托利亞最早留名的建築師傳統之一。</p></div>
+  </div>
+
+  <div class="spot">
+    <div class="kicker">「來者不拒」的聖人</div>
+    <h4>梅夫拉納博物館<span class="en">Mevlâna Museum, Konya</span></h4>
+    <p><span class="lead">魯米為什麼紅遍21世紀美國：</span>13世紀的梅夫拉納·賈拉魯丁·魯米（Rumi）本是學院派法學家，1244年遇見雲遊托鉢僧夏姆士（Shams），一見如故、徹夜論道，之後把學問全化成詩與音樂。他創建的「旋玉托鉢僧教團（Mevlevi，Whirling Dervishes）」以旋轉冥想聞名：右掌朝天承接神恩、左掌朝地傳予眾生，一足定地自轉——不是跳舞，是「以肉身模擬行星繞日」的動態冥想。孔亞就是這一切的中心。魯米墓上的塞爾柱高帽陵頂（形似倒扣的青瓷碗——塞爾柱蘇丹的高帽造型）是孔亞天際線的地標。</p>
+    <p>想入教的課程是「服務人群1001天」——先在廚房伺候食客，把「自我」磨掉，才談昇華。這座建築本身就是修道院、學校與清真寺的合體。</p>
+    <div class="funfact"><span class="ff-label">🎯 FUN FACT</span>
+      <p>魯米是Google Trends史上被搜尋最多的詩人之一：2007年後在美國「比哈菲茲更紅」，婚禮誦讀率極高。他那句「來吧，不管你是不信者、拜火者、眾神者——來吧！我們這裡不講規矩」被刻在舊金山市政廳門口。導遊若提到「7月17日魯米逝世紀念日（Şeb-i Arûs，婚夜）」——蘇菲把死亡視為「與真主團圓的新婚之夜」，這名字本身就夠fun。</p></div>
+  </div>
+</div></div>
+
+<!-- ================= D6 ================= -->
+<div class="wrap"><div class="day">
+  <div class="day-head"><span class="badge">DAY 6</span><h3>孔亞 → 阿斯班多斯 → 安塔利亞 · 地中海的羅馬彩蛋</h3><span class="date">09/29（二）</span></div>
+  <div class="route-line">孔亞 →265km→ 阿斯班多斯 →48km→ 安塔利亞 · 地中海魚料理 · 宿 <b>Renex Hotel</b></div>
+
+  <div class="spot">
+    <div class="kicker">二千年前的自來水工程</div>
+    <h4>阿斯班多斯古羅馬水道橋<span class="en">Aspendos Aqueduct</span></h4>
+    <p><span class="lead">羅馬人的基建強迫症：</span>這座水道橋從北邊山泉橫跨河谷送水進城，全程靠極精準的微小坡度（每公里只降幾十公分）讓水自己流一天又一整天，不需要幫浦。殘存的雙層拱橋跨越河谷，上層是水槽、下層是結構——羅馬工程師的「水往低處流但要精確控制低多少」的數學，兩千年後仍讓水利系學生驚訝。</p>
+    <div class="funfact"><span class="ff-label">🎯 FUN FACT</span>
+      <p>同一個帝國的高架水道最經典的是法國的加爾橋（Pont du Gard）——但阿斯班多斯這座的「原裝完整度」更高，而且它的姊妹篇——劇場的音效——才是真正的主角。請把兩者連起來看：能造橋送水的人，順手把劇場的聲學也點到滿分。</p></div>
+  </div>
+
+  <div class="spot">
+    <div class="kicker">今天仍然在開演唱會的羅馬劇場</div>
+    <h4>阿斯班多斯大劇場<span class="en">Aspendos Theatre</span></h4>
+    <p><span class="lead">兩位富商兄弟的「捐校記憶款」：</span>西元2世紀後葉安敦尼皇帝治下，這座容納約兩萬人的劇場由當地望族卡爾卡提亞家族出資、建築師兄弟佐西穆斯與西奧多羅斯設計建成——碑文上刻著他們的名字，堪稱1800年前的「冠名捐助人」。山脊半圓形的天然坡度＋完美的幾何反射設計，讓最上排的觀眾今天仍聽得清舞台中央的一枚硬幣落地聲。它被公認是「保存最完整的羅馬劇場」：舞台牆、58個拱形入口、看台全數保留。</p>
+    <div class="funfact"><span class="ff-label">🎯 FUN FACT</span>
+      <p>當地傳說：國王曾放話「一夜建成劇場者，娶公主」，為國王蓋好舞台建築的矮人工匠自認功勞最大、偷偷留下最後一塊拱心石沒放。國王翻臉不認帳，憤而詛咒舞台——所以直到今天，歌劇都只在看台前表演、不踩舞台。真實版本是：因為音效太好，這裡如今仍是「阿斯班多斯歌劇與芭蕾音樂節」的固定主场（約7～8月）。你踩過的座位，兩千年前有人坐過同一排聽同一個和聲。</p>
+  </div>
+
+  <div class="spot">
+    <div class="kicker">河流掉進海裡的城</div>
+    <h4>杜登瀑布<span class="en">Düden Waterfalls</span></h4>
+    <p><span class="lead">世界上少數「直接入海」的瀑布：</span>杜登河從托羅斯山穿過14公里長的峽谷（上瀑布），流進安塔利亞市區後，從城市邊緣的懸崖一頭栽進地中海（下瀑布）——淡水和海水在落水處交融，船開到瀑布下面從洞後方回望，是當地人秘藏的經典視角（本行程走下瀑步道為主）。</p>
+    <div class="funfact"><span class="ff-label">🎯 FUN FACT</span>
+      <p>安塔利亞是全土耳其「人均 sunshine 最多」的城市之一，城市口號是「土耳其的裡維耶拉」。這一帶古稱西利乞亞（Cilicia），是古代地中海海盜的總本部——羅馬名政治家西塞羅曾公開發表演說支持剿海盜法案，後來還親自來此地當過省長，把「海盜窩」當政績刷經驗。</p></div>
+  </div>
+
+  <div class="spot">
+    <div class="kicker">山城裡的海風</div>
+    <h4>卡雷吉舊城區<span class="en">Kaleiçi, Antalya</span></h4>
+    <p><span class="lead">一座被迷你的時光機：</span>Kaleiçi（意為「城堡內」）被奧圖曼時期的木造老宅、塞爾柱時期的以芙利尖塔（Yivli Minare，13世紀，紋理像一根擰過的糖果棒）和為紀念哈德良皇帝130年到訪而建的凱旋門疊在同一個街區。羅馬港的防波堤現在仍是漁港與遊艇港——港灣設計兩千年沒大改，因為「當初就設計對了」。</p>
+    <div class="funfact"><span class="ff-label">🎯 FUN FACT</span>
+      <p>鐘塔（Saat Kulesi）下的廣場是古城的「公廳」：羅馬時代這裡是市集、塞爾柱時代是刑場、今日是喝土耳其茶看落日的大廳。以芙利尖塔周圍塞爾柱時期的墓園，墓碑上的「頭巾柱」代表逝者身份——整座小城就是一部縮時攝影版的安納托利亞史。</p></div>
+  </div>
+</div></div>
+
+<!-- ================= D7 ================= -->
+<div class="wrap"><div class="day">
+  <div class="day-head"><span class="badge">DAY 7</span><h3>安塔利亞 → 巴慕卡麗 · 棉花做的城堡</h3><span class="date">09/30（三）</span></div>
+  <div class="route-line">車程約236公里 · 棉堡、希拉波里斯古城 · 宿 <b>Richmond Pamukkale Thermal Resort</b></div>
+
+  <div class="spot">
+    <div class="kicker">1988年世界文化遺產（自然+文化雙料）</div>
+    <h4>棉堡<span class="en">Pamukkale「棉花堡」</span></h4>
+    <p><span class="lead">一部正在運行的石灰岩3D打印機：</span>富含碳酸氫鈣的溫泉水從山頂流出，接觸空氣後CO₂跑掉、碳酸鈣沉澱——經年累月在山坡上積出160公尺高的純白鈣華梯田「pamuk＝棉花＋kale＝城堡」。泉水溫約35℃，至今仍在流動、仍在「蓋新的白色池子」。</p>
+    <p>但棉堡也有黑歷史：20世紀酒店直接蓋在台地上抽溫泉、游客亂踩讓鈣化池變黑。聯合國一度考慮除名，土耳其拆光違建、限制赤足走指定路段，才把它救回來。你今天「必須脫鞋」的規定，就是這場抢救運動的成果。</p>
+    <div class="funfact"><span class="ff-label">🎯 FUN FACT</span>
+      <p>旁邊的「古董池（Antique Pool）」允許你付費游泳——水底下沉著羅馬柱頭與石柱，你在2000年前的古城遺址上面仰泳，氣泡從腳底溫泉孔冒上來。克麗奧佩特拉（埃及艷后）據傳也曾在此泡湯，所以古董池又名「Cleopatra Pool」。另外，遠古時期這裡的溫泉療愈聞名全小亞細亞，來養病=古羅馬版的「康復療養區置產」。</p></div>
+  </div>
+
+  <div class="spot">
+    <div class="kicker">棉花上的城市</div>
+    <h4>希拉波里斯古城<span class="en">Hierapolis</span></h4>
+    <p><span class="lead">「聖城」的命名由來：</span>公元前190年貝加孟王國建立，名字直譯「聖城」，相傳此地廟宇多。它是融合希臘、羅馬、猶太與早期基督教文化的溫泉渡假地：神廟、大劇場（能坐12,000人）、公共浴池、大市场、 necropolis 亡靈大道（墓地長街）一應俱全。更特別的是：根據早期教會傳統，使徒腓力（Philip）在此殉道，他的墓址就在今日的「腓力殉道堂（Philippion）」遺跡。</p>
+    <p>地震是它的終結者——公元60年、130年、以及最終14世紀的大震把古城翻來覆去地撕碎。這也解釋了「為什麼古羅馬城市會有一排排倒塌的圓柱躺在路上」。</p>
+    <div class="funfact"><span class="ff-label">🎯 FUN FACT</span>
+      <p>希拉波里斯有種「冥國入口」傳說：Plutonium洞穴（Gates of Pluto）二氧化碳濃度極高，鳥獸入內即死、祭司卻能站著存活（因為站在石柱邊空氣分層）。古人信這真是冥界大門。2010年代地質學家破解了這個「魔法」——是局部高濃度CO₂，現代化學版的「神蹟解剖」。</p></div>
+    <div class="tip">棉堡鈣化池滑，務必赤腳走指定區域；古城區碎石多，建議穿好走的涼鞋進出。</div>
+  </div>
+</div></div>
+
+<!-- ================= D8 ================= -->
+<div class="wrap"><div class="day">
+  <div class="day-head"><span class="badge">DAY 8</span><h3>巴慕卡麗 → 艾菲索斯 → 伊茲密爾 ✈ 伊斯坦堡</h3><span class="date">10/01（四）</span></div>
+  <div class="route-line">→183km→ 艾菲索斯 →66km→ 伊茲密爾，搭 TK2333 18:55–20:15 飛伊斯坦堡 · 宿 <b>Hilton Istanbul Bakırköy</b></div>
+
+  <div class="spot">
+    <div class="kicker">世界上最大、保存最好的希臘—羅馬城市</div>
+    <h4>艾菲索斯古城<span class="en">Ephesus / Efes</span></h4>
+    <p><span class="lead">古代世界七大奇景之一就是蓋在這裡：</span>艾菲索斯的阿提密斯（Artemis/Diana）神廟曾位列七大奇蹟，規模據說比雅典帕德嫩神廟大三倍，如今只剩一根柱子與羽毛級的記憶——但光是這座遺址剩下的庫瑞特大道、哈德良神廟、公共廁所（馬賽克地板下有水溝沖刷，座位旁還要聊天配對，被譽為「古地中海社交中心」）、以及那面兩層樓高的立面——<b>塞爾瑟斯圖書館</b>——就夠震撼。圖書館藏書12,000卷，為紀念亡子而建，牆裡藏著壁龕，立面四尊雕像代表智慧、知識、理智與美德。</p>
+    <p>宗教史同樣重磅：早期基督教會議在此召開；相傳聖母瑪利亞隨使徒約翰晚年定居 附近的夜宿山（Meryemana）（Meryemana）；《聖經·啟示錄》中「致艾菲索斯教會的信」是七封啟示信的開頭。公元17年大地震由羅馬出款重建——它是地中海東岸的「第一大城市」約200年。</p>
+    <div class="funfact"><span class="ff-label">🎯 FUN FACT</span>
+      <p>艾菲索斯的銀幣是最早的「城市IP」：蜂與鹿印在錢上，相當於今天的城市logo。而遺址裡最熱門的打卡位——公共廁所的馬賽克，導遊一定會問：「你們猜上廁所要不要錢？」答案是要的，而且收入拿去蓋了劇院。</p></div>
+    <div class="tip">園區開闊遮蔭少，帽子與水必備；石面光滑，穿平底鞋。</div>
+  </div>
+
+  <div class="spot">
+    <div class="kicker">愛琴海的軟黃金</div>
+    <h4>皮衣工廠<span class="en">Leather Shop</span></h4>
+    <p><span class="lead">土耳其是歐洲大牌背後的老闆：</span>愛琴海地區的羊皮細軟輕盈，土耳其代工地產業鏈替義大利、法國精品代工數十年，世界皮衣代工量數一數二。邊看走秀邊喝蘋果茶（土耳其蘋果茶 çay 是國民儀式，茶壺雙層、濃茶兌水）是土式觀光購物標配。想上台走兩步的，別害羞——這是全程最高CP值的黑歷史素材。</p>
+  </div>
+</div></div>
+
+<!-- ================= D9 ================= -->
+<div class="wrap"><div class="day">
+  <div class="day-head"><span class="badge">DAY 9</span><h3>伊斯坦堡精華日 · 一平方公里疊了三層帝國</h3><span class="date">10/02（五）</span></div>
+  <div class="route-line">藍色清真寺 → 古羅馬賽馬場 → 聖索菲亞 → 托普卡匹皇宮 → 塔克辛廣場 · 宿 <b>Hilton Istanbul Bakırköy</b></div>
+
+  <div class="spot">
+    <div class="kicker">六座宣禮塔的烏龍</div>
+    <h4>藍色清真寺<span class="en">Sultan Ahmed Mosque</span></h4>
+    <p><span class="lead">史上最貴的一次「聽錯話」：</span>1609年蘇丹艾哈迈德一世說要「altın minare＝金頂宣禮塔」，年輕建築師聽成「altı minare＝六座宣禮塔」——建成後才發現全世界震驚：麥加克爾白清真寺也只有六塔，等於與聖地平起平坐，宗教爭議大到蘇丹加錢幫麥加蓋了第七座宣禮塔才平息風波。寺內20,000多塊伊茲尼克藍磚讓它得名「藍色清真寺」；260個小窗讓陽光把內室染成淡藍煙霧，地毯全部手工編織。它是伊斯坦堡少數「清真寺＋景點＋城市地標」三用而不崩潰的建築。</p>
+    <div class="funfact"><span class="ff-label">🎯 FUN FACT</span>
+      <p>當年蘇丹把皇宮的一部分讓出來蓋寺，被貴族吐槽「敗家」；建寺耗盡國庫，完工不久，年僅27歲的蘇丹艾哈邁德一世就病逝了。為籌建這座寺，蘇丹跟奧地利打仗打得賠本，貴族吐槽他「花國庫蓋廟」；爭議太大，他甚至因為把麥加清真寺也加蓋了第七座塔才平息「六塔之爭」。</p></div>
+    <div class="tip">男女皆禁短褲短裙露肩；女性需包頭（現場有供應）；參訪時間會因祈禱關閉，聽領隊安排。</div>
+  </div>
+
+  <div class="spot">
+    <div class="kicker">3500年的城市客廳</div>
+    <h4>古羅馬賽馬場<span class="en">Hippodrome of Constantinople</span></h4>
+    <p><span class="lead">君士坦丁堡的「台北車站＋中正紀念堂＋小巨蛋」：</span>西元203年塞普提穆斯·塞維魯皇帝重建擴建，全盛期可容10萬人，拜占庭千年的政治熱點：賽車、遊行、暴動、即位——「藍黨 vs 綠黨」車隊粉丝對立堪比羅馬競技場。查士丁尼大帝在此宣布即位，也在此目送尼卡暴動燒掉半座城。如今它是公園，只剩三大紀念物：埃及圖特摩斯三世方尖碑（前15世紀作品、357年才搭船運來，比多數歐洲國家建國還早）、君士坦丁七世的「砌牆柱」、以及從德爾菲搬來的「蛇柱」。相傳蛇頭是被17世紀幾個頑童砸掉的——3500年的青銅紀念柱，頂端毁於小孩子的淘氣。</p>
+    <div class="funfact"><span class="ff-label">🎯 FUN FACT</span>
+      <p>方尖碑基座刻著塞維魯家族「向觀眾揮手」的浮雕——1600年前就流行領袖簽名照；而它的底座四角至今藏著未公開的楔形文字版本。另外：賽馬場的地下排水系統部分至今仍在運作，是伊斯坦堡最「在职」的羅馬基建。</p></div>
+  </div>
+
+  <div class="spot">
+    <div class="kicker">千年之最，三次變身</div>
+    <h4>聖索菲亞清真寺<span class="en">Hagia Sophia</span></h4>
+    <p><span class="lead">「世界最大教堂」的頭銜戴了將近一千年（537–1453）：</span>查士丁尼在尼卡暴動之後5年3個月內重建完成（工程奇蹟），兩萬名工人、來自帝國各地的列柱：以弗所阿提密斯神廟的石柱、巴力貝克的石板……圓頂在幾何學上「懸浮在光環中」是刻意設計：40扇窗打穿基座讓它看起來浮著。1204年第四次十字軍打劫君士坦丁堡，把教堂上的四匹銅馬搶去威尼斯——今天聖馬可大教堂門口那組是複製品，原件在威尼斯的博物館裡。1453年穆罕默德二世破城後第一事到聖索菲亞祈禱，将其改為清真寺——並保留了大部分馬賽克：鄂圖曼的「宗教多元工程」。1935年凱末爾改為博物館；2020年7月10日，再改回清真寺至今，祈禱期間不開放參访。</p>
+    <div class="funfact"><span class="ff-label">🎯 FUN FACT</span>
+      <p>建築師米利都的伊西多洛斯與特拉勒斯的安提莫斯分别是數學家與物理學家，不是「建築科班」出身——第一代圓頂在地震中塌掉，第二代加高才修對。教堂裡有根「流淚柱」，傳說把拇指插進裂縫轉一圈能治眼疾；1847–49年瑞士費薩提（Fossati）兄弟為鄂圖曼重修內部馬賽克，聖索菲亞可以說是持續了1500年的工程維護結晶。</p></div>
+  </div>
+
+  <div class="spot">
+    <div class="kicker">大砲門裡的六百年</div>
+    <h4>托普卡匹皇宮<span class="en">Topkapı Palace</span></h4>
+    <p><span class="lead">一個王朝住了約400年的「城中城」：</span>1459年穆罕默德二世始建，名字「Topkapı＝大砲之門」來自昔日城門上架砲。皇宮是層層遞進的四重庭院制度：外朝（行政）、內廷（皇宮運作）、內宮（蘇丹與后宮）、私園——越進越深、越深越禁，最後一层是蘇丹的心事。蘇丹們在此治國到19世紀中葉（之後搬去歐式的多爾瑪巴切宮）。後宮區住過蘇丹的母親、妻子、姊妹、未成年的皇子們，由黑人太監守門——「蘇丹女帝」（如Kösem、Hürrem）的權謀在此上演，比劇集還誇張。珍寶館藏有：據傳摩西的手杖、施洗者約翰的手臂骨（真的在展出）、蘇丹的「世界最早精確地圖之一」——皮里雷斯的地圖（1513）已畫出美洲海岸線，比很多「發現」還早。</p>
+    <div class="funfact"><span class="ff-label">🎯 FUN FACT</span>
+      <p>皇宮的廚房一天要做上萬人的飯，專人只負責管米飯；後宮的窗格子是「看而不被看見」的設計：公主隔格觀察Candidate駙馬。而皇宮最殘酷的傳統是「継承法」：蘇丹去世後，先抢到王座的兒子有權處決所有兄弟以「內戰」名義——所以皇子們後半生形同軟禁在後宮區「金籠子」裡。而整個皇宮最高規格的礼节是——對蘇丹只能說「我的蘇丹」，不能直說「你」。</p></div>
+    <div class="tip">週二休館（遇休館行程順序會調整）；園區極大，穿最好走的鞋。</div>
+  </div>
+
+  <div class="spot">
+    <div class="kicker">現代伊斯坦堡的心跳</div>
+    <h4>塔克辛廣場與獨立大街<span class="en">Taksim Square & İstiklal Caddesi</span></h4>
+    <p><span class="lead">土耳其的「香榭麗舍＋時代廣場」：</span>「Taksim」土耳其語（阿拉伯語「分配」之意）原意是「分配」——鄂圖曼時代這裡是城區供水分配點。廣場上的共和國紀念碑（1928）上是凱末爾與兩位戰友的群像；凱末爾送書與花的形象——不是拿劍的將軍，是老師與主人。獨立大街長1.4公里、19世紀起就是多民族商業街（希臘、亞美尼亞、猶太、 Levantin 歐僑），兩旁的洛可可＋巴洛克混血建築、老書店、巧克力店、教堂與猶太會堂比鄰；街上最紅的是1920年代就在跑的復古路面電車和「會唱歌的餐廳」。</p>
+    <div class="funfact"><span class="ff-label">🎯 FUN FACT</span>
+      <p>大街上「賣土耳其冰淇淋（dondurma）的小哥會故意倒你筷子逗你」——那是當地傳統攤販表演；加了蘭花塊莖粉（salep）與乳香脂的 dondurma 黏到能拉丝、不融化。買不買都記得被玩一次，這是儀式。</p></div>
+  </div>
+</div></div>
+
+<!-- ================= D10 ================= -->
+<div class="wrap"><div class="day">
+  <div class="day-head"><span class="badge">DAY 10</span><h3>博斯普魯斯包船 + 香料市集 → 返航</h3><span class="date">10/03（六）</span></div>
+  <div class="route-line">上午博斯普魯斯海峽遊船（整團包船）→ 香料市集 → TK124 15:50 起飛回桃園</div>
+
+  <div class="spot">
+    <div class="kicker">左手歐洲、右手亞洲</div>
+    <h4>博斯普魯斯海峽<span class="en">Bosphorus Strait</span></h4>
+    <p><span class="lead">全球最窄的「洲際分界線」：</span>博斯普魯斯最短處只有660公尺，卻是黑海與地中海的唯一水道——俄國的糧食、西亞的石油都要看土耳其點頭。海底下其實有條「古河」：2000年代哥倫比亞大學探測證實，冰河時期黑海曾是淡水湖，地中海「瀑布倒灌」進來形成河床化石——這是「黑海洪水與諾亞方舟」假說的根據地。鄂圖曼時代的水岸炮台（如 Rumeli Hisarı，1452年穆罕默德二世僅用四個月蓋完，為圍君士坦丁堡切斷黑海援軍）就是為了封鎖這條水道。海峽兩岸蘇丹夏宮、歐式洋行木屋（yalı）一字排開——遊船從歐洲岸開到亞洲岸只要20分鐘，「最短的跨洲旅行」就在這。</p>
+    <div class="funfact"><span class="ff-label">🎯 FUN FACT</span>
+      <p>博斯普魯斯海峽有「逆流雙層流」：表層水向黑海流、底層高鹽水向地中海流，同一條河同時有兩個方向的洋流。泳壇傳說「横渡博斯普魯斯」是勇士儀式（每年真的辦洲際游泳賽）。兩岸那些白色木屋（yalı）很多是19世紀做糧食貿易發家的商宅——土耳其有句老話：「買一栋博斯普魯斯的海屋，是俄羅斯寡夫與阿拉伯王子共同的夢想。」</p></div>
+  </div>
+
+  <div class="spot">
+    <div class="kicker">收埃及貢品的市場</div>
+    <h4>香料市集（埃及市場）<span class="en">Mısır Çarşısı</span></h4>
+    <p><span class="lead">「用香料付貢稅」的市場：</span>1664年落成，因為地租來源是鄂圖曼向埃及徵的貢品（很多以香料抵税）而得名「埃及市集」。它是中東香料貿易的终点站：從印度群島漂來的胡椒、肉桂、藏紅花在此成交，再分送歐洲。今天仍是伊斯坦堡氣味最濃的地方：蘋果茶、番紅花、乾果、土耳其軟糖（lokum）與「獵巫式」的乾香包。1940年代這裡曾傳出「香料店老闆偷放迷魂藥」的都市傳說，至今土耳其長輩還會開玩笑說「在埃及市場被下藥了」= 愛上某人了。</p>
+    <div class="tip">比大巴札人少、色彩更多；殺價請保持微笑，茶可以喝、貨未必買。</div>
+  </div>
+</div></div>
+
+<!-- ================= D11 ================= -->
+<div class="wrap"><div class="day">
+  <div class="day-head"><span class="badge">DAY 11</span><h3>返抵桃園 · 帶一箱故事回家</h3><span class="date">10/04（日）</span></div>
+  <div class="route-line">08:05 抵達桃園國際機場</div>
+  <div class="spot">
+    <p>十一天、五座古城、兩塊大陸、三大帝國的殘響。歡迎回家。若行李超重，想想這幾個理由：藏紅花、土耳其軟糖、駱駝羊毛毯、藍眼睛（nazar boncuğu，土耳其護身符，碎掉代表擋過災）、和一百張熱氣球照片。</p>
+  </div>
+</div></div>
+
+<!-- ================= THEMES ================= -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><h2>全程通用小知識 · 到了再翻也來得及</h2><small>土耳其生存指南 2.0</small></div>
+    <div class="grid2">
+      <div class="theme"><h4>🧿 藍眼睛（Nazar Boncuğu）</h4><p>四色玻璃圈＝「邪視」護身符，掛在車上、店內、嬰兒身上。碎了是好消息——它替你擋了一次。幾乎家家戶戶都有，送禮不踩雷。</p></div>
+      <div class="theme"><h4>🫖 茶（Çay）與咖啡（Kahve）</h4><p>郁金香形小杯紅茶是土耳其的「社會潤滑油」，一杯接一杯不付錢也要聊；土耳其咖啡煮法入 UNESCO 非遺名錄，「一杯咖啡的義務是40年友谊」是當地名言。喝完後杯底的渣還能翻過來「占卜」——土耳其咖啡占卜是當地閨蜜聚會標配。</p></div>
+      <div class="theme"><h4>🍽 餐食邏輯</h4><p>禁豬肉，牛羊雞為主；前菜 meze 十幾種輪番上，烤肉分 kebab（串烤）與 ocakbaşı（爐邊現片）。飯後必上土耳其軟糖或蘋果茶。素食者自備泡麵（注意含肉成分）。</p></div>
+      <div class="theme"><h4>💵 錢與殺價</h4><p>貨幣是土耳其里拉（TRY），貶值快所以現金不用囤太多；景區殺價從「五折微笑起」。退稅認準 Globe Blue/Tax Free 貼紙，機場海關蓋章才生效。</p></div>
+      <div class="theme"><h4>🕌 清真寺禮儀</h4><p>脫鞋（袋子可索取或自備塑膠袋）、遮肩膝、女性包頭（現場多備借用）；祈禱時間暫停開放。參觀時別背對祈禱者拍照。</p></div>
+      <div class="theme"><h4>🚗 交通與時差</h4><p>土耳其慢台灣5小時；境內長途拉車4–5小時很常見，暈車藥備著。伊斯坦堡地鐵與渡輪極好用；計程車請上 Uber/BiTaksi 叫車，防跳表。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div>
+      <b>資料來源：</b>可樂旅遊團號 ETE092411TK6 行程表（審核編號 006003, 2026/08/27）＋公開史料整理。<br>
+      本報告為行前參考，現場導遊解說與最新政策（如熱氣球搭乘規定、聖索菲亞開放時段）為準。
+    </div>
+    <div style="text-align:right">
+      09/24 – 10/04 · 2026<br>
+      祝旅途平安愉快 ✈🇹🇷
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
